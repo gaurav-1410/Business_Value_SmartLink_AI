@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sidebar li a {
+  display: block;
+  padding: 12px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.sidebar li.active,
+.sidebar li:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.main {
+  flex: 1;
+  padding: 20px 30px;
+  overflow-y: auto;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.doc-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 18px;
+  position: relative;
+  transition: 0.2s;
+}
+
+.doc-card:hover {
+  transform: scale(1.03);
+}
+
+.doc-card h3 {
+  margin: 0;
+}
+
+.doc-card p {
+  opacity: 0.9;
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.doc-card.ok .badge {
+  background: linear-gradient(90deg, #22c55e, #4ade80);
+  color: #000;
+}
+
+.doc-card.warn .badge {
+  background: linear-gradient(90deg, #f59e0b, #fbbf24);
+  color: #000;
+}
+
+.alerts {
+  margin-top: 30px;
+}
+
+.alert {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.alert.warn {
+  background: linear-gradient(
+    135deg,
+    rgba(245, 158, 11, 0.25),
+    rgba(251, 191, 36, 0.15)
+  );
+}
+
+.alert.ok {
+  background: linear-gradient(
+    135deg,
+    rgba(34, 197, 94, 0.25),
+    rgba(74, 222, 128, 0.15)
+  );
+}
+
+.submit {
+  margin-top: 20px;
+  text-align: right;
+}
+
+button {
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button.primary {
+  background: linear-gradient(90deg, #22c55e, #4ade80);
+  color: #000;
+}

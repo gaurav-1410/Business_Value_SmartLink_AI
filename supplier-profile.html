@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartLink AI</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/supplier-profile.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a href="index.html" class="sidebar-logo">
+          <h2>SmartLink AI</h2>
+        </a>
+        <ul>
+          <li><a href="homepage.html">Dashboard</a></li>
+          <li class="active"><a href="suppliers.html">Suppliers</a></li>
+          <li><a href="trade-setup.html">Trade Setup</a></li>
+          <li><a href="shipments.html">Shipments</a></li>
+          <li><a href="compliance.html">Compliance</a></li>
+          <li><a href="analytics.html">Analytics</a></li>
+          <li><a href="trade-news.html">Trade News</a></li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <h1>Supplier Profile</h1>
+          <button class="back">← Back</button>
+        </header>
+
+        <section class="profile-grid">
+          <!-- LEFT -->
+          <div class="card profile-card">
+            <div class="avatar">AT</div>
+            <h2>ABC Textiles</h2>
+            <p>Mumbai, India</p>
+
+            <div class="trust-ring">
+              <svg width="120" height="120">
+                <circle cx="60" cy="60" r="50"></circle>
+                <circle cx="60" cy="60" r="50" class="progress"></circle>
+              </svg>
+              <div class="score">85</div>
+              <small>Trust Score</small>
+            </div>
+
+            <button class="primary" onclick="startTrade('ABC Textiles')">
+              Start Trade
+            </button>
+            <button class="secondary">Request Quote</button>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="details">
+            <div class="card">
+              <h3>Company Overview</h3>
+              <p>
+                Leading textile exporter specializing in cotton fabrics with 12+
+                years of cross-border trade experience.
+              </p>
+            </div>
+
+            <div class="card stats">
+              <div>
+                <h4>On-Time Delivery</h4>
+                <div class="bar"><span style="width: 90%"></span></div>
+              </div>
+              <div>
+                <h4>Quality Score</h4>
+                <div class="bar"><span style="width: 88%"></span></div>
+              </div>
+              <div>
+                <h4>Response Time</h4>
+                <div class="bar"><span style="width: 75%"></span></div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Certifications</h3>
+              <ul>
+                <li>ISO 9001</li>
+                <li>OEKO-TEX</li>
+                <li>Export Excellence Award</li>
+              </ul>
+            </div>
+
+            <div class="card ai">
+              💡 AI Insight: Low risk supplier. Cost efficiency above market
+              average.
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script src="js/supplier-profile.js"></script>
+</html>

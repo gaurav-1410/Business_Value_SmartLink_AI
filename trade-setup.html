@@ -1,0 +1,175 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartLink AI</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/trade-setup.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a href="index.html" class="sidebar-logo">
+          <h2>SmartLink AI</h2>
+        </a>
+        <ul>
+          <li><a href="homepage.html">Dashboard</a></li>
+          <li><a href="suppliers.html">Suppliers</a></li>
+          <li class="active"><a href="trade-setup.html">Trade Setup</a></li>
+          <li><a href="shipments.html">Shipments</a></li>
+          <li><a href="compliance.html">Compliance</a></li>
+          <li><a href="analytics.html">Analytics</a></li>
+          <li><a href="trade-news.html">Trade News</a></li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <h1>New Trade Setup</h1>
+        </header>
+
+        <section class="wizard">
+          <div class="steps">
+            <div class="step active">1. Supplier</div>
+            <div class="step">2. Product</div>
+            <div class="step">3. Route</div>
+            <div class="step">4. Review</div>
+          </div>
+
+          <div class="content">
+            <!-- Step 1: Supplier -->
+            <div class="form" id="step1">
+              <label>Select Supplier</label>
+              <select id="supplier">
+                <option value="ABC Textiles">ABC Textiles - Mumbai, India</option>
+                <option value="IndoMach">IndoMach - Pune, India</option>
+                <option value="Bharat Pharma">Bharat Pharma - Hyderabad, India</option>
+              </select>
+
+              <div class="actions">
+                <button class="primary" onclick="nextStep()">Next</button>
+              </div>
+            </div>
+
+            <!-- Step 2: Product -->
+            <div class="form" id="step2" style="display: none;">
+              <label>Product Name</label>
+              <input value="Cotton Fabric" id="productName" />
+
+              <label>HS Code</label>
+              <input value="5208" id="hsCode" />
+
+              <label>Unit Price (€)</label>
+              <input value="4.50" id="unitPrice" />
+
+              <label>MOQ (Minimum Order Quantity)</label>
+              <input type="number" value="1000" id="moq" readonly />
+
+              <label>Total Price (€)</label>
+              <input type="text" id="totalPrice" readonly />
+
+              <div class="actions">
+                <button class="secondary" onclick="prevStep()">Back</button>
+                <button class="primary" onclick="nextStep()">Next</button>
+              </div>
+            </div>
+
+            <!-- Step 3: Route -->
+            <div class="form" id="step3" style="display: none;">
+              <label>Origin</label>
+              <input value="Mumbai, India" id="origin" />
+
+              <label>Destination</label>
+              <input value="Hamburg, Germany" id="destination" />
+
+              <label>Shipping Mode</label>
+              <select id="shippingMode">
+                <option value="Sea Freight">Sea Freight</option>
+                <option value="Air Freight">Air Freight</option>
+                <option value="Sea + Rail">Sea + Rail</option>
+              </select>
+
+              <label>Priority</label>
+              <select id="priority">
+                <option value="Lowest Cost">Lowest Cost</option>
+                <option value="Fastest Delivery">Fastest Delivery</option>
+                <option value="Balanced">Balanced</option>
+              </select>
+
+              <div class="actions">
+                <button class="secondary" onclick="prevStep()">Back</button>
+                <button class="primary" onclick="showRoutes()">Next</button>
+              </div>
+
+              <!-- Available Routes Section -->
+              <div id="availableRoutes" style="display: none; margin-top: 30px;">
+                <h3>Available Routes</h3>
+                <div class="route-cards">
+                  <div class="route-card" onclick="selectRoute('sea-standard')">
+                    <div class="route-header">
+                      <h4>🚢 Sea Freight - Standard</h4>
+                      <span class="route-price">€3,200</span>
+                    </div>
+                    <p><strong>Delivery Time:</strong> 21 days</p>
+                    <p><strong>Route:</strong> Mumbai → Genoa → Hamburg </p>
+                    <p class="route-note">More affordable option</p>
+                  </div>
+
+                  <div class="route-card" onclick="selectRoute('sea-express')">
+                    <div class="route-header">
+                      <h4>🚢 Sea Freight - Express</h4>
+                      <span class="route-price">€4,100</span>
+                    </div>
+                    <p><strong>Delivery Time:</strong> 18 days</p>
+                    <p><strong>Route:</strong> Mumbai → Rotterdam → Hamburg </p>
+                    <p class="route-note">Faster sea delivery</p>
+                  </div>
+
+                  <div class="route-card" onclick="selectRoute('air-freight')">
+                    <div class="route-header">
+                      <h4>✈️ Air Freight</h4>
+                      <span class="route-price">€8,500</span>
+                    </div>
+                    <p><strong>Delivery Time:</strong> 5 days</p>
+                    <p><strong>Route:</strong> Mumbai → Frankfurt → Hamburg </p>
+                    <p class="route-note">Fastest delivery</p>
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <button class="primary" onclick="confirmRoute()">Confirm Route</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 4: Review -->
+            <div class="form" id="step4" style="display: none;">
+              <h3>Supplier Details</h3>
+              <p id="reviewSupplier"></p>
+
+              <h3>Product Details</h3>
+              <p id="reviewProduct"></p>
+
+              <h3>Route Details</h3>
+              <p id="reviewRoute"></p>
+
+              <div class="actions">
+                <button class="secondary" onclick="prevStep()">Back</button>
+                <button class="primary" onclick="submitTrade()">Submit Trade</button>
+              </div>
+            </div>
+
+            <aside class="ai-panel">
+              <h3>AI Recommendations</h3>
+              <p>�️ Recommended Route: Mumbai → Genoa → Hamburg (Sea Freight)</p>
+              <p>⚠️ Possible port congestion at Mumbai</p>
+              <p>⏱️ Time: 21 days</p>
+            </aside>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+
+  <script src="js/trade-setup.js"></script>
+</html>

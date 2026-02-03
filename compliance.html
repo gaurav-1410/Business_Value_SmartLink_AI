@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartLink AI</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/compliance.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a href="index.html" class="sidebar-logo">
+          <h2>SmartLink AI</h2>
+        </a>
+        <ul>
+          <li><a href="homepage.html">Dashboard</a></li>
+          <li><a href="suppliers.html">Suppliers</a></li>
+          <li><a href="trade-setup.html">Trade Setup</a></li>
+          <li><a href="shipments.html">Shipments</a></li>
+          <li class="active"><a href="compliance.html">Compliance</a></li>
+          <li><a href="analytics.html">Analytics</a></li>
+          <li><a href="trade-news.html">Trade News</a></li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <h1>Compliance & Documents</h1>
+          <button class="primary">Generate All</button>
+        </header>
+
+        <section class="grid">
+          <div class="doc-card ok">
+            <h3>Commercial Invoice</h3>
+            <p>Generated</p>
+            <span class="badge">✔ Ready</span>
+            <button>Download</button>
+          </div>
+
+          <div class="doc-card ok">
+            <h3>Packing List</h3>
+            <p>Generated</p>
+            <span class="badge">✔ Ready</span>
+            <button>Download</button>
+          </div>
+
+          <div class="doc-card warn">
+            <h3>Certificate of Origin</h3>
+            <p>Missing</p>
+            <span class="badge">⚠ Required</span>
+            <button>Upload</button>
+          </div>
+
+          <div class="doc-card">
+            <h3>Customs Declaration</h3>
+            <p>Pending</p>
+            <span class="badge">⏳ In Progress</span>
+            <button>Generate</button>
+          </div>
+        </section>
+
+        <section class="alerts">
+          <div class="alert warn">
+            ⚠ HS Code mismatch detected for Product Line 2
+          </div>
+          <div class="alert ok">✔ Estimated duty: €2,140</div>
+        </section>
+
+        <div class="submit">
+          <button class="primary" onclick="submitShipment()">
+            Submit Shipment
+          </button>
+        </div>
+      </main>
+    </div>
+  </body>
+
+  <script src="js/compliance.js"></script>
+</html>

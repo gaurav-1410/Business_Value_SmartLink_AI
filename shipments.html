@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartLink AI</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/shipments.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a href="index.html" class="sidebar-logo">
+          <h2>SmartLink AI</h2>
+        </a>
+        <ul>
+          <li><a href="homepage.html">Dashboard</a></li>
+          <li><a href="suppliers.html">Suppliers</a></li>
+          <li><a href="trade-setup.html">Trade Setup</a></li>
+          <li class="active"><a href="shipments.html">Shipments</a></li>
+          <li><a href="compliance.html">Compliance</a></li>
+          <li><a href="analytics.html">Analytics</a></li>
+          <li><a href="trade-news.html">Trade News</a></li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <h1>Shipment Tracking</h1>
+        </header>
+
+        <section class="tracking-grid">
+          <!-- LEFT MAP PANEL -->
+          <div class="map-panel">
+            <h3>Route Map</h3>
+            <div class="map-placeholder">Mumbai → Hamburg</div>
+            <div class="route-info">
+              <span>🚚 In Transit</span>
+              <span>ETA: 21 days</span>
+            </div>
+            <div class="progress">
+              <div class="bar"></div>
+            </div>
+          </div>
+
+          <!-- RIGHT DETAILS PANEL -->
+          <div class="details-panel">
+            <div class="card">
+              <h3>Shipment #SL-2098</h3>
+              <p>Carrier: DHL Global</p>
+              <p>Mode: Sea Freight</p>
+              <p>Departure: Mumbai Port</p>
+              <p>Arrival: Hamburg Port</p>
+            </div>
+
+            <div class="card alerts">
+              <h3>Live Alerts</h3>
+              <ul>
+                <li>⚠ Port congestion detected in Mumbai</li>
+                <li>ℹ Customs clearance expected +1 day</li>
+                <li>✔ Shipment departed Hamburg</li>
+              </ul>
+            </div>
+
+            <div class="card ai">
+              💡 AI Insight: Switching to air freight reduces delay risk by 18%.
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+
+  <script src="js/shipments.js"></script>
+</html>

@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartLink AI</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a href="index.html" class="sidebar-logo">
+          <h2>SmartLink AI</h2>
+        </a>
+        <ul>
+          <li class="active"><a href="homepage.html">Dashboard</a></li>
+          <li><a href="suppliers.html">Suppliers</a></li>
+          <li><a href="trade-setup.html">Trade Setup</a></li>
+          <li><a href="shipments.html">Shipments</a></li>
+          <li><a href="compliance.html">Compliance</a></li>
+          <li><a href="analytics.html">Analytics</a></li>
+          <li><a href="trade-news.html">Trade News</a></li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <h1>Dashboard</h1>
+          <div class="user">
+            <span>Gaurav Pandey</span>
+            <img src="https://i.pravatar.cc/40" />
+          </div>
+        </header>
+
+        <section class="kpis">
+          <div class="kpi-card">
+            <h3>Active Routes</h3>
+            <p>3</p>
+            <span>India → Germany</span>
+          </div>
+          <div class="kpi-card">
+            <h3>Shipments</h3>
+            <p>5</p>
+            <span>In Transit</span>
+          </div>
+          <div class="kpi-card">
+            <h3>Risk Alerts</h3>
+            <p>2</p>
+            <span>Medium</span>
+          </div>
+          <div class="kpi-card">
+            <h3>Supplier Score</h3>
+            <p>82</p>
+            <span>Top Rated</span>
+          </div>
+        </section>
+
+        <section class="grid">
+          <div class="card">
+            <h3>Live Shipment</h3>
+            <p>Mumbai → Hamburg</p>
+            <div class="progress">
+              <div class="bar"></div>
+            </div>
+            <small>ETA: 21 days</small>
+          </div>
+
+          <div class="card">
+            <h3>AI Insights</h3>
+            <p>Switching last trade to air freight reduces delay risk by 18%</p>
+            <button>View Details</button>
+          </div>
+
+          <div class="card">
+            <h3>Top Supplier</h3>
+            <p>ABC Textiles, Mumbai</p>
+            <small>Trust Score: 85</small>
+          </div>
+
+          <div class="card">
+            <h3>Compliance Status</h3>
+            <ul>
+              <li>Commercial Invoice ✔</li>
+              <li>Packing List ✔</li>
+              <li>Certificate of Origin ⚠</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script src="js/dashboard.js"></script>
+</html>

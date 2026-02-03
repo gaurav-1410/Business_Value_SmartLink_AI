@@ -1,0 +1,156 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartLink AI - Global Trade Management</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/homepage.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <h2>SmartLink AI</h2>
+        </div>
+        <div class="nav-buttons">
+          <button class="nav-btn login-btn" onclick="openLoginModal()">Login</button>
+          <button class="nav-btn signup-btn" onclick="openSignupModal()">Sign Up</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Global Trade Management Made Simple</h1>
+        <p>Connect with verified suppliers, manage shipments, and streamline your international trade operations with AI-powered insights.</p>
+        <button class="cta-btn" onclick="scrollToFeatures()">Explore Features</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <h3>5000+</h3>
+          <p>Verified Suppliers</p>
+        </div>
+        <div class="stat">
+          <h3>50+</h3>
+          <p>Countries</p>
+        </div>
+        <div class="stat">
+          <h3>$2B+</h3>
+          <p>Trade Value</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <h2>Key Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3>Supplier Discovery</h3>
+          <p>Find and connect with vetted suppliers worldwide with trust scores and performance metrics.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Analytics & Insights</h3>
+          <p>Get AI-powered recommendations to optimize costs, delivery times, and supplier relationships.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🚢</div>
+          <h3>Shipment Tracking</h3>
+          <p>Real-time tracking of shipments with live updates and predictive analytics for delays.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">✅</div>
+          <h3>Compliance Management</h3>
+          <p>Automated compliance checks and documentation verification for smooth customs clearance.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🛣️</div>
+          <h3>Route Optimization</h3>
+          <p>Smart routing with multiple shipping mode options and cost vs. speed trade-offs.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📰</div>
+          <h3>Trade News</h3>
+          <p>Stay updated with latest trade regulations, tariffs, and market insights.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <h2>Ready to Transform Your Trade Operations?</h2>
+      <p>Join thousands of businesses using SmartLink AI to streamline their global supply chain.</p>
+      <button class="cta-btn-large" onclick="openSignupModal()">Get Started Today</button>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeLoginModal()">&times;</span>
+        <h2>Login to SmartLink AI</h2>
+        <p class="login-message">Click on Login to continue</p>
+        <form>
+          <label>Email</label>
+          <input type="email" placeholder="Enter your email" value="admin@gmail.com" />
+
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" value="*************" />
+
+          <button type="button" class="modal-btn" onclick="handleLogin()">Login</button>
+        </form>
+        <p class="modal-text">Don't have an account? <a href="#" onclick="switchToSignup()">Sign Up</a></p>
+      </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeSignupModal()">&times;</span>
+        <h2>Create Your Account</h2>
+        <form>
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your full name" />
+
+          <label>Company Name</label>
+          <input type="text" placeholder="Enter your company name" />
+
+          <label>Email</label>
+          <input type="email" placeholder="Enter your email" />
+
+          <label>Password</label>
+          <input type="password" placeholder="Create a password" />
+
+          <label>Confirm Password</label>
+          <input type="password" placeholder="Confirm your password" />
+
+          <button type="button" class="modal-btn" onclick="handleSignup()">Sign Up</button>
+        </form>
+        <p class="modal-text">Already have an account? <a href="#" onclick="switchToLogin()">Login</a></p>
+      </div>
+    </div>
+
+    <!-- Modal Overlay -->
+    <div id="modalOverlay" class="modal-overlay" onclick="closeAllModals()"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2026 SmartLink AI. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </footer>
+
+    <script src="js/homepage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartLink AI</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/analytics.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a href="index.html" class="sidebar-logo">
+          <h2>SmartLink AI</h2>
+        </a>
+        <ul>
+          <li><a href="homepage.html">Dashboard</a></li>
+          <li><a href="suppliers.html">Suppliers</a></li>
+          <li><a href="trade-setup.html">Trade Setup</a></li>
+          <li><a href="shipments.html">Shipments</a></li>
+          <li><a href="compliance.html">Compliance</a></li>
+          <li class="active"><a href="analytics.html">Analytics</a></li>
+          <li><a href="trade-news.html">Trade News</a></li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <h1>Analytics & Insights</h1>
+        </header>
+
+        <section class="kpis">
+          <div class="kpi-card">
+            <h3>Total Trade (€)</h3>
+            <p>€124,500</p>
+          </div>
+          <div class="kpi-card">
+            <h3>Average Lead Time</h3>
+            <p>14 days</p>
+          </div>
+          <div class="kpi-card">
+            <h3>Top Supplier</h3>
+            <p>ABC Textiles</p>
+          </div>
+          <div class="kpi-card">
+            <h3>Risk Alerts</h3>
+            <p>3</p>
+          </div>
+        </section>
+
+        <section class="charts">
+          <div class="chart-card">
+            <h3>Cost Breakdown</h3>
+            <canvas id="barChart"></canvas>
+          </div>
+
+          <div class="chart-card">
+            <h3>Lead Time Trends</h3>
+            <canvas id="lineChart"></canvas>
+          </div>
+
+          <div class="ai-card">
+            💡 AI Recommendation: Switching to Supplier B could reduce costs by
+            11%.
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/analytics.js"></script>
+  </body>
+</html>
