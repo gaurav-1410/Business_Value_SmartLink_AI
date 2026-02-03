@@ -2,24 +2,6 @@
 
 > **Transform your international trade operations with AI-powered insights and intelligent supplier discovery**
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](package.json)
-![Status](https://img.shields.io/badge/status-Active-brightgreen.svg)
-
----
-
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Quick Start](#quick-start)
-- [Project Structure](#project-structure)
-- [Pages Overview](#pages-overview)
-- [Technologies](#technologies)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -28,76 +10,6 @@
 **SmartLink AI** is a comprehensive global trade management platform designed to simplify international commerce. It connects businesses with verified suppliers, provides intelligent routing options, manages compliance, and offers AI-powered insights to optimize supply chain operations.
 
 Whether you're a small importer or a large-scale trader, SmartLink AI streamlines your entire trade workflow—from supplier discovery to shipment tracking.
-
----
-
-## ✨ Features
-
-### 🤝 Supplier Discovery & Management
-- Access to 5000+ verified suppliers across 50+ countries
-- Trust scores and performance metrics
-- Detailed supplier profiles with compliance history
-- Real-time supplier ratings and reviews
-
-### 📊 Analytics & Insights
-- AI-powered cost optimization recommendations
-- Trade trend analysis and market insights
-- Performance metrics and KPIs
-- Historical trade data visualization
-
-### 🚢 Shipment Tracking
-- Real-time GPS tracking of shipments
-- Live status updates from ports
-- Predictive delay alerts
-- Multi-modal shipping support (Sea, Air, Rail)
-
-### ✅ Compliance Management
-- Automated document verification
-- Compliance status tracking
-- Certificate of Origin management
-- Commercial Invoice generation
-
-### 🛣️ Intelligent Route Planning
-- Multi-option route comparison
-- Cost vs. Speed optimization
-- Port congestion alerts
-- Smart carrier recommendations
-
-### 📰 Trade News & Updates
-- Live trade news updates
-- Tariff changes notifications
-- Market trend alerts
-- Regulatory compliance updates
-
-### 🔐 Secure Trade Setup Wizard
-- Step-by-step trade configuration
-- Supplier selection
-- Product management with HS codes
-- Route optimization
-- Comprehensive review before submission
-
----
-
-## 🚀 Quick Start
-
-### Prerequisites
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-- No installation required - runs entirely in browser
-
-### Access the Application
-
-1. **Open Homepage**
-   ```
-   Open homepage.html in your browser
-   ```
-
-2. **Login**
-   - Email: `admin@gmail.com`
-   - Password: `*************`
-
-3. **Explore Features**
-   - Navigate using the sidebar menu
-   - Start a new trade setup using the wizard
 
 ---
 
@@ -226,63 +138,6 @@ Bus/
 
 ---
 
-## 💾 Installation
-
-### Option 1: Direct File Access
-1. Download or clone the repository
-2. Open any `.html` file in a web browser
-3. Start exploring!
-
-### Option 2: Local Server (Recommended)
-```bash
-# Using Python 3
-python -m http.server 8000
-
-# Using Python 2
-python -m SimpleHTTPServer 8000
-
-# Using Node.js
-npx http-server
-
-# Using PHP
-php -S localhost:8000
-```
-
-Then navigate to `http://localhost:8000/homepage.html`
-
----
-
-## 📖 Usage
-
-### Getting Started
-1. **Visit Homepage** → Click "Login"
-2. **Credentials**
-   - Email: `admin@gmail.com`
-   - Password: `*************`
-3. **Explore Dashboard** → View KPIs and active routes
-4. **Navigate Features** → Use sidebar for different sections
-
-### Creating a New Trade
-1. Go to **Trade Setup** page
-2. **Step 1**: Select a supplier
-3. **Step 2**: Enter product details
-4. **Step 3**: Choose shipping route and options
-5. **Step 4**: Review and submit
-
-### Tracking Shipments
-1. Navigate to **Shipments**
-2. View live tracking map
-3. Check delivery status
-4. Monitor risk alerts
-
-### Checking Compliance
-1. Go to **Compliance**
-2. Review document status
-3. Check compliance alerts
-4. Download required documents
-
----
-
 ## 🎨 Color Scheme
 
 - **Primary Blue**: `#2563eb` - Buttons, accents
@@ -314,25 +169,6 @@ Then navigate to `http://localhost:8000/homepage.html`
 
 ---
 
-## 🔒 Security Features
-
-- Client-side validation
-- Secure form handling
-- Data privacy focused
-- No external API calls (for sensitive data)
-
----
-
-## 📱 Responsive Design
-
-All pages are fully responsive and work seamlessly on:
-- ✅ Desktop (1920px and above)
-- ✅ Laptop (1366px)
-- ✅ Tablet (768px - 1024px)
-- ✅ Mobile (320px - 767px)
-
----
-
 ## 🚀 Future Enhancements
 
 - [ ] Backend API integration
@@ -346,47 +182,9 @@ All pages are fully responsive and work seamlessly on:
 
 ---
 
-## 🤝 Contributing
-
-We welcome contributions! Here's how:
-
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
-
----
-
 ## 📝 License
 
 This project is licensed under the **MIT License** - see the LICENSE file for details.
-
----
-
-## 💬 Support & Feedback
-
-- 📧 Email: support@smartlinkai.com
-- 🐛 Report Issues: [GitHub Issues](https://github.com/smartlinkai/issues)
-- 💡 Feature Requests: [GitHub Discussions](https://github.com/smartlinkai/discussions)
-
----
-
-## 🙏 Acknowledgments
-
-- Inspired by modern trade platforms
-- Built with passion for global commerce
-- Designed for seamless user experience
-
----
-
-## 📊 Statistics
-
-- **8 Main Pages** - Comprehensive features
-- **6 Feature Categories** - Full supply chain management
-- **5000+ Suppliers** - Verified global network
-- **50+ Countries** - International coverage
-- **$2B+** - Combined trade value
 
 ---
 
